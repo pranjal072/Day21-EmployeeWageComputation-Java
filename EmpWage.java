@@ -6,12 +6,10 @@ public class EmpWage
    public static final int maxDays = 20;
    public static final int maxHr = 100;
 
-   public static void main(String args[])
+   public static void computeEmpWage()
    {
       int workHr,wage;
       int Salary = 0, totHr = 0, totDays = 0;
-
-      System.out.println("Welcome to Employee Wage Calculation !!");
 
       while ( totHr < maxHr && totDays < maxDays )
       {
@@ -36,4 +34,9 @@ public class EmpWage
 
       System.out.println("Total Salary of this Month is : " + Salary);
    }
+	public static void main(String[] args)
+	{
+      System.out.println("Welcome to Employee Wage Calculation !!");
+		computeEmpWage();
+	}
 }
